@@ -1,5 +1,7 @@
 import user from '../json/user.json';
+import data from '../json/data.json';
 import Profile from './Profile/Profile';
+import Statistics from './Statistics/Statistics';
 
 import css from './App.module.css';
 
@@ -13,14 +15,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
-// style={{
-//   height: '100vh',
-//   display: 'flex',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   fontSize: 20,
-//   color: '#010101',
-// }}
