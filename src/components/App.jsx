@@ -1,18 +1,11 @@
 import user from '../json/user.json';
 import Profile from './Profile';
 
+import css from './App.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        color: '#010101',
-      }}
-    >
+    <div className={css.app}>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,3 +16,11 @@ export const App = () => {
     </div>
   );
 };
+// style={{
+//   height: '100vh',
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   fontSize: 20,
+//   color: '#010101',
+// }}
