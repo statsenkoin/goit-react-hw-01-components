@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import noImage from '../../images/common/no-image.jpg';
+import noImage from '../../images/no-image.jpg';
 
 import css from './Profile.module.css';
 
