@@ -1,5 +1,5 @@
 import user from '../json/user.json';
-import Profile from './Profile';
+import Profile from './Profile/Profile';
 
 import css from './App.module.css';
 
