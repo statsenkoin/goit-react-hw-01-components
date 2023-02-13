@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import StatisticsData from './StatisticsData';
-// import css from './Statistics.module.css';
+import css from './Statistics.module.css';
 
-export default function Statistics({ title = 'Upload stats', stats }) {
+export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
+    <section className={css.statistics}>
+      <h2 className={css.title}>{title && title}</h2>
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {stats.map(item => {
           return (
             <StatisticsData
@@ -23,5 +23,5 @@ export default function Statistics({ title = 'Upload stats', stats }) {
 }
 
 Statistics.propType = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
