@@ -1,13 +1,16 @@
 import user from 'dataBase/user.json';
 import data from 'dataBase/data.json';
 
-import { Profile, Statistics } from 'components';
+import { AppContainer } from './App.styled';
+import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 
-import css from './App.module.css';
+// import css from './App.module.css';
+// import { AppContainer } from 'components';
 
 export const App = () => {
   return (
-    <div className={css.app}>
+    <AppContainer>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -17,6 +20,6 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
-    </div>
+    </AppContainer>
   );
 };
