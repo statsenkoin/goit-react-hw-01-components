@@ -1,8 +1,7 @@
 import user from 'dataBase/user.json';
 import data from 'dataBase/data.json';
 
-import Profile from '../Profile/Profile';
-import Statistics from '../Statistics/Statistics';
+import { Profile, Statistics } from 'components';
 
 import css from './App.module.css';
 

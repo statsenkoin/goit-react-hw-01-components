@@ -3,7 +3,7 @@ import { getRandomHexColor } from 'utils';
 
 import css from './Statistics.module.css';
 
-export default function Statistics({ title, stats }) {
+export function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       <h2 className={css.title}>{title && title}</h2>
@@ -26,7 +26,7 @@ export default function Statistics({ title, stats }) {
   );
 }
 
-Statistics.propType = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({

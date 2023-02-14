@@ -3,13 +3,7 @@ import noImage from 'images/no-image.jpg';
 
 import css from './Profile.module.css';
 
-export default function Profile({
-  username,
-  tag,
-  location,
-  avatar = noImage,
-  stats,
-}) {
+export function Profile({ username, tag, location, avatar = noImage, stats }) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
