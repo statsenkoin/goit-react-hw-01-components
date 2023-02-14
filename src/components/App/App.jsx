@@ -1,7 +1,8 @@
-import user from '../json/user.json';
-import data from '../json/data.json';
-import Profile from './Profile/Profile';
-import Statistics from './Statistics/Statistics';
+import user from 'dataBase/user.json';
+import data from 'dataBase/data.json';
+
+import Profile from '../Profile/Profile';
+import Statistics from '../Statistics/Statistics';
 
 import css from './App.module.css';
 
