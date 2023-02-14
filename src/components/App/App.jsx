@@ -5,9 +5,6 @@ import { AppContainer } from './App.styled';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 
-// import css from './App.module.css';
-// import { AppContainer } from 'components';
-
 export const App = () => {
   return (
     <AppContainer>

@@ -8,8 +8,6 @@ import {
   Percentage,
 } from './Statistics.styled';
 
-// import css from './Statistics.module.css';
-
 export function Statistics({ title, stats }) {
   return (
     <Card>

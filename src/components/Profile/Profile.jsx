@@ -13,8 +13,6 @@ import {
   Quantity,
 } from 'components/Profile/Profile.styled';
 
-// import css from './Profile.module.css';
-
 export function Profile({ username, tag, location, avatar = noImage, stats }) {
   return (
     <Card>
