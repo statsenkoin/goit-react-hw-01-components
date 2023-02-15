@@ -17,7 +17,7 @@ export function Profile({ username, tag, location, avatar = noImage, stats }) {
   return (
     <Card>
       <UserDescription>
-        <Avatar src={avatar} alt="User avatar" />
+        <Avatar src={avatar ? avatar : noImage} alt="User avatar" />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
