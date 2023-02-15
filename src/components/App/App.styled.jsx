@@ -8,4 +8,5 @@ export const AppContainer = styled.div`
   padding: 30px;
   align-items: center;
   font-size: 18px;
+  background-color: ${({ theme }) => theme.colors.backgroundMain};
 `;
