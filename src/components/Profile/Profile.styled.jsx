@@ -3,10 +3,9 @@ import styled from '@emotion/styled';
 export const Card = styled.div`
   width: 300px;
   border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.backgroundMain};
+  border-radius: 8px;
   overflow: hidden;
-
   box-shadow: ${({ theme }) => theme.colors.shadow};
 `;
 export const UserDescription = styled.div`
@@ -19,14 +18,14 @@ export const UserDescription = styled.div`
 export const Avatar = styled.img`
   width: 120px;
   border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.backgroundMain};
+  border-radius: 50%;
 }
 `;
 export const Name = styled.p`
+  margin-top: 20px;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 20px;
   color: ${({ theme }) => theme.colors.textMain};
 `;
 export const Tag = styled.p`
