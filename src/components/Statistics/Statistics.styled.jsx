@@ -1,19 +1,15 @@
 import styled from '@emotion/styled';
 import { getRandomHexColor } from 'utils';
-import { themeLight } from 'constants/theme';
-
-const { backgroundMain, shadow, textMain, textLight } = themeLight.colors;
 
 export const Card = styled.section`
-  background-color: ${backgroundMain};
-  box-shadow: ${shadow} 0px 3px 3px -2px, ${shadow} 0px 3px 4px 0px,
-    ${shadow} 0px 1px 8px 0px;
+  background-color: ${({ theme }) => theme.colors.backgroundMain};
+  box-shadow: ${({ theme }) => theme.colors.shadow};
 `;
 export const Title = styled.h2`
   font-size: 18px;
   line-height: 3em;
   font-weight: 700;
-  color: ${textMain};
+  color: ${({ theme }) => theme.colors.textMain};
   text-transform: uppercase;
   text-align: center;
 `;
@@ -33,10 +29,10 @@ export const Item = styled.li`
 `;
 export const Label = styled.span`
   font-size: 16px;
-  color: ${textLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 export const Percentage = styled.span`
   font-size: 22px;
   font-weight: 700;
-  color: ${textLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
