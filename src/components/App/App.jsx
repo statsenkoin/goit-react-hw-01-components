@@ -4,10 +4,12 @@ import friends from 'dataBase/friends.json';
 import transactions from 'dataBase/transactions.json';
 
 import { AppContainer } from './App.styled';
-import { Profile } from 'components/Profile/Profile';
-import { Statistics } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/FriendList/FriendList';
-import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import {
+  Profile,
+  Statistics,
+  FriendList,
+  TransactionHistory,
+} from 'components';
 
 export const App = () => {
   return (
