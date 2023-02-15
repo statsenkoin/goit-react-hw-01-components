@@ -4,6 +4,7 @@ import { getRandomHexColor } from 'utils';
 export const Card = styled.section`
   background-color: ${({ theme }) => theme.colors.backgroundMain};
   box-shadow: ${({ theme }) => theme.colors.shadow};
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 4px;
   overflow: hidden;
 `;

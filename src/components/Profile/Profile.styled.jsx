@@ -20,7 +20,6 @@ export const Avatar = styled.img`
   border: 1px solid ${({ theme }) => theme.colors.border};
   background-color: ${({ theme }) => theme.colors.backgroundMain};
   border-radius: 50%;
-}
 `;
 export const Name = styled.p`
   margin-top: 20px;
