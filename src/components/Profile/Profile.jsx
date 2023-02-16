@@ -13,7 +13,7 @@ import {
   Quantity,
 } from 'components/Profile/Profile.styled';
 
-export function Profile({ username, tag, location, avatar = noImage, stats }) {
+export function Profile({ username, tag, location, avatar, stats }) {
   return (
     <Card>
       <UserDescription>
