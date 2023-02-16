@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const AppContainer = styled.div`
+export const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

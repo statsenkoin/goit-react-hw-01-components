@@ -3,7 +3,7 @@ import data from 'dataBase/data.json';
 import friends from 'dataBase/friends.json';
 import transactions from 'dataBase/transactions.json';
 
-import { AppContainer } from './App.styled';
+import { AppWrapper } from './App.styled';
 import {
   Profile,
   Statistics,
@@ -13,7 +13,7 @@ import {
 
 export const App = () => {
   return (
-    <AppContainer>
+    <AppWrapper>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -25,6 +25,6 @@ export const App = () => {
       <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions}></TransactionHistory>
-    </AppContainer>
+    </AppWrapper>
   );
 };
