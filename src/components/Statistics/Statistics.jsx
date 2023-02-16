@@ -11,7 +11,7 @@ import {
 export function Statistics({ title, stats }) {
   return (
     <Card>
-      <Title>{title && title}</Title>
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => {
