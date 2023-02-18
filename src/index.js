@@ -5,7 +5,6 @@ import { ThemeProvider } from '@emotion/react';
 import { theme } from 'constants/theme';
 
 import { App } from 'components';
-// import './index.css';
 import { GlobalStyles } from 'components';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

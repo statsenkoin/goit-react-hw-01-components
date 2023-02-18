@@ -1,4 +1,9 @@
 import { Global, css } from '@emotion/react';
+import 'modern-normalize';
+
+export function GlobalStyles() {
+  return <Global styles={globalStyles} />;
+}
 
 const globalStyles = css`
   body {
@@ -39,7 +44,3 @@ const globalStyles = css`
     height: auto;
   }
 `;
-
-export function GlobalStyles() {
-  return <Global styles={globalStyles} />;
-}

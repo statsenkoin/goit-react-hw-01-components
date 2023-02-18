@@ -3,3 +3,5 @@
 3. https://emotion.sh/docs/introduction (alternative
    https://styled-components.com/)
 4. index.css moved to GlobalStyles component
+5. https://www.npmjs.com/package/modern-normalize is imported. look through
+   GlobalStyle.jsx
